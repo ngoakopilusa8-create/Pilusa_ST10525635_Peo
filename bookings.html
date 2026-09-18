@@ -4,45 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookings</title>
-    <link rel="stylesheet" type="text/cc" href="CSS\style.css">
+    <link rel="stylesheet"  href="CSS/style.css">
 </head>
 <body>
-    <main>
     <header>
         <!--Nav means navigation this is my navigation bar work in progress-->
-        <nav>
-        <img src="images\wc.jpg" class="logo">
-        <ul>
-        <li><a href="index.html">Home</a></li>
-       <li><a href="aboutus.html">About us</a></li>
+       <nav class="navbar">
+        <img src="images/wc.jpg" class="logo">
+         <ul class="nlinks">
+        <li class="la"><a href="index.html">Home</a></li>
+       <li class><a href="aboutus.html">About us</a></li>
        <li><a href="contacts.html">Contacts</a></li>
        <li><a href="services.html">Services</a></li>
-       <li><a href="bookings.html" >Book now</a></li>
+       <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="bookings.html" >Book now</a></li>
         </ul>
         </nav>
 
     </header>
+<main class="booking-container">
+        <form class="booking-form">
+            <h2>Book an Appointment</h2>
 
-        <FORM>
-        First name:
-        <input type="text" name"Fname">
-        <br>
-        Surname:
-        <input type="text" name"Sname">
-        <br>
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="Fname" placeholder="Enter your first name" required>
+            </div>
 
-        Email:
-     <input type="email">
+            <div class="form-group">
+                <label for="sname">Surname</label>
+                <input type="text" id="sname" name="Sname" placeholder="Enter your surname" required>
+            </div>
 
-     Date for booking:
-     <input type="datetime-local">  
-<br>
-        Reason for booking:
-        <input type="text">
-<br>
-<input type="submit">
-        </FORM>
-        
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="Email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="btime">Date & Time for Booking</label>
+                <input type="datetime-local" id="btime" name="BookingTime" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Reason for Booking</label>
+                <textarea id="reason" name="Reason" rows="4" placeholder="Briefly explain your reason..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Confirm Booking</button>
+        </form>
     </main>
 </body>
 </html>
