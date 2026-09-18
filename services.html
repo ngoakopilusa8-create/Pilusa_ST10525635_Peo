@@ -6,7 +6,7 @@
     <title>Services offered</title>
     <link rel="stylesheet"  href="CSS/style.css">
 </head>
-<body>
+<body id="top">
     <header>
     <nav class="navbar">
         <img src="images/wc.jpg" class="logo">
@@ -16,21 +16,25 @@
        <li><a href="contacts.html">Contacts</a></li>
        <li><a href="services.html">Services</a></li>
        <li><a href="FAQ.html">FAQ</a></li>
-        <li><a href="bookings.html" >Book now</a></li>
+        <li><a href="bookings.html" class="btn-book">Book now</a></li>
         </ul>
         </nav>
         
         
     </header>
         <!--Main part-->
-        <main>
-            <!--headings-->
-<h1>Our services</h1>
-<h3>Your health is our prioty</h3>
+        <main class="services-page">
+            <section class="services-intro">
+                <p class="eyebrow">Complete healthcare under one roof</p>
+                <h1>Our services</h1>
+                <p>Your health is our priority. Explore the care available from the WeCare Medical Centre team.</p>
+            </section>
+
+            <section class="service-grid" aria-label="Our healthcare services">
 
 <!--List with heading 3 and image-->
     
-        <div class="family medicine">
+        <div class="service-card family-medicine">
     <UL>
         <h3>Family medicine</h3>
         <img src="images/Family medicine.jpg">
@@ -44,7 +48,7 @@
     </UL>
         </div>
 
-        <div class="Obstetrics"> 
+        <div class="service-card obstetrics">
     <h3>Obstetrics & Gyneacology</h3>
     <ul>
 <img src="images/anatomic-model.jpg">
@@ -62,11 +66,10 @@
 </ul>
     </div>
 
-    <div class="Radiology">
+    <div class="service-card radiology">
 
-        <img src="images/Radiology.jpeg">
         <h3>Radiology</h3>
-        
+         <img src="images/Radiology.jpeg">
         <ul>
  <li>Ultrasound Examinations</li>
 <li>Dental X-ray</li>
@@ -74,11 +77,107 @@
 <li>CT Scan and Mammogram</li>
 </ul>
     </div>
-    
+    <div class="service-card mens-health">
+       <h3>Men's Health</h3>
+        <img src="images\mens health.webp" alt="Men's health services">
+        <ul>
+            <li>Screening for male-specific health concerns (prostate)</li>
+            <li>Erectile dysfunction diagnoses & treatment</li>
+            <li>Minor Procedures & suturing</li>
+        </ul>
+    </div>
 
+    <div class="service-card physiotherapy">
+        <h3>Physio Therapy</h3>
+        <img src="images/physiot.jpg" alt="Physiotherapy treatment">
+        <ul>
+            <li>Manual Therapy</li>
+            <li>Geriatric Physiotherapy</li>
+            <li>Paediatric Physiotherapy</li>
+            <li>Sports Physiotherapy</li>
+            <li>Musculoskeletal Rehabilitation</li>
+        </ul>
+    </div>
+
+    <div class="service-card iv-therapy">
         
-       
+        <h3>IV Therapy(on appointment)</h3>
+        <img src="images/iv.jpg" alt="IV therapy treatment">
+        <ul>
+            <li>Mood and brain booster drip</li>
+            <li>Vitamin & Mineral booster drip</li>
+            <li>Immune booster(flu) drip</li>
+            <li>Anti-aging drip</li>
+            <li>Detox drip</li>
+        </ul>
+    </div>
+
+    <div class="service-card speech-audiology">
+        <h3>SpeechTherapy & Audiology</h3>
+        <img src="images/speech.jpg" alt="Speech therapy and audiology">
+        <ul>
+            <li>Foreign body removal</li>
+            <li>Wax/Cerumen removal / Earn cleaning</li>
+            <li>Ear pain treatment</li>
+            <li>Infection treatment/Discharging ears</li>
+            <li>Comprehensive hearing test/screening Hearing aid testing & repairs</li>
+            <li>Speech treatment due to CVA/Stroke</li>
+            <li>Speech NEURO assessment & treatment</li>
+            <li>Dysphagia/feeding assessment & treatment (Paediatrics & Adults)</li>
+            <li>RAF</li>
+        </ul>
+    </div>
+
+    <div class="service-card laboratory-services">
         
+        <h3>Laboratory Services</h3>
+        <img src="images/lab.jpg" alt="Laboratory services">
+        <ul>
+            <li>Haematology</li>
+            <li>Coagulation</li>
+            <li>Biochemistry</li>
+            <li>Endocrinology</li>
+            <li>Virology</li>
+            <li>HIV monitoring</li>
+            <li>Serology</li>
+            <li>Microbiology</li>
+            <li>Cytology</li>
+            <li>Histopathology</li>
+            <li>Molecular Diagnostics</li>
+        </ul>
+    </div>
+
+    <div class="service-card fertility-clinic">
+        <h3>Fertility Clinic</h3>
+        <img src="images/fertility.jpg" alt="Fertility clinic services">
+        <ul>
+            <li>Fertility screening</li>
+            <li>Advanced sperm tests</li>
+            <li>Semen freezing</li>
+            <li>Artificial insemination</li>
+            <li>Post vasectomy semen evaluation</li>
+        </ul>
+        </div>
+        <div class="service-card dentistry">
+            <h3>Dentistry</h3>
+            <img src="images/teeth.jpg" alt="Dentistry services">
+            <ul>
+    <li>Braces</li>
+    <li>Cleaning teeth</li>
+    <li>Fillings</li>
+    <li>Extraction of teeth</li>
+    <li>Surgical removal of wisdom teeth</li>
+
+  <li>Crowns & Bridges</li>
+  <li>False teeth</li>
+ <li> Bleeding gums treatment</li>
+            </ul>
+        </div>
+        </section>
 </main>
+<footer class="site-footer">
+    <div class="footer-content"><div class="footer-brand"><img src="images/wc.jpg" alt="WeCare Medical Centre logo"><p>Quality healthcare for individuals and families in a welcoming, professional environment.</p></div><div class="footer-column"><h2>Our services</h2><a href="services.html">Family medicine</a><a href="services.html">Radiology</a><a href="services.html">Physiotherapy</a><a href="services.html">Women's health</a></div><div class="footer-column"><h2>Quick links</h2><a href="aboutus.html">About us</a><a href="FAQ.html">Frequently asked questions</a><a href="bookings.html">Book an appointment</a><a href="contacts.html">Contact us</a></div><div class="footer-column footer-contact"><h2>Talk to us</h2><a href="tel:+27128080788">Reception: +27 12 808 0788</a><a href="tel:+27128080789">Lab &amp; Fertility: +27 12 808 0789</a><a href="https://api.whatsapp.com/send?phone=27817803963">WhatsApp: +27 81 780 3963</a><div class="footer-icons"><a href="https://api.whatsapp.com/send?phone=27817803963" aria-label="Contact us on WhatsApp"><img src="images/whatsapp icon.jpg" alt=""></a><a href="https://wecaremedicalcentre.co.za/contact/" aria-label="Call WeCare Medical Centre"><img src="images/telephone.jpg" alt=""></a></div></div></div><div class="footer-bottom"><p>&copy; 2026 WeCare Medical Centre. All rights reserved.</p><p>Professional care for every stage of life.</p></div>
+</footer>
+<a class="back-to-top" href="#top">Back to top &#8593;</a>
 </body>
 </html>

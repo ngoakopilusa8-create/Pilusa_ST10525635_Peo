@@ -6,7 +6,7 @@
     <title>About us</title>
     <link rel="stylesheet"  href="CSS/style.css">
 </head>
-<body>
+<body id="top">
 
         <header>
        <nav class="navbar">
@@ -17,35 +17,123 @@
        <li><a href="contacts.html">Contacts</a></li>
        <li><a href="services.html">Services</a></li>
        <li><a href="FAQ.html">FAQ</a></li>
-        <li><a href="bookings.html" >Book now</a></li>
+        <li><a href="bookings.html" class="btn-book">Book now</a></li>
         </ul>
         </nav>
 
     </header>
-    <h1>We Provide Only the Best Service</h1>
-    <!--code for paraghraphs below-->
-    <P>WeCare Medical Center is here to provide top-quality healthcare in a comfortable and modern setting. Visit us and experience expert medical care from our dedicated professionals.</P>
-<div>
-    <H2>DR C Saidiya</H2>
-    <img src="images/ab DR cs1.jpeg">
-    <img src="images/ab DR cs2.png">
-    <img src="images/ab DR cs3.png">
-    <img src="images/ab DR cs4.png">
-    <p><b>Dr Christian Nasibu Sisa Saidiya</b> is a Family Physician, medical educator, and healthcare leader with over 25 years of experience in clinical medicine, emergency care, medical education, and health services management. He serves as a Senior Lecturer in the Department of Practice of Medicine at Sefako Makgatho Health Sciences University and is the Founder and Medical Director of WeCare Medical Centre in Pretoria, a multidisciplinary healthcare facility providing comprehensive primary and specialist care. He also provides telemedicine consultations. Passionate about excellence in patient care, medical training, and healthcare innovation, Dr Saidiya is committed to improving health outcomes through evidence-based medicine, leadership, and mentorship.</p>
-    </div>
-   
-    <div>
-        <h2>DR E Mpofu</h2>
-                <img src="images/ab DR em.png">
-                <img src="images/ab DR em 1.png">
-                <img src="images/ab DR em 2.png">
-                <img src="images/1 ab DR em 3.png">
-                 <img src="images/ab DR em 4.png">
-                    <img src="images/ab DR em 5.png">
-          <br> 
-          <video src="images/DR em.mp4" controls></video>
-        </br>
-    </div>
-    
+    <main class="about-page">
+        <section class="about-intro">
+            <p class="eyebrow">Meet the team</p>
+            <h1>We Provide Only the Best Service</h1>
+            <p>WeCare Medical Centre is here to provide top-quality healthcare in a comfortable and modern setting. Visit us and experience expert medical care from our dedicated professionals.</p>
+        </section>
+
+        <section class="doctor-profile">
+            <div class="doctor-content">
+                <p class="eyebrow">Medical director</p>
+                <h2>Dr C Saidiya</h2>
+                <p><b>Dr Christian Nasibu Sisa Saidiya</b> is a Family Physician, medical educator, and healthcare leader with over 25 years of experience in clinical medicine, emergency care, medical education, and health services management. He serves as a Senior Lecturer in the Department of Practice of Medicine at Sefako Makgatho Health Sciences University and is the Founder and Medical Director of WeCare Medical Centre in Pretoria, a multidisciplinary healthcare facility providing comprehensive primary and specialist care. He also provides telemedicine consultations. Passionate about excellence in patient care, medical training, and healthcare innovation, Dr Saidiya is committed to improving health outcomes through evidence-based medicine, leadership, and mentorship.</p>
+            <img src="images\ab DR cs1.jpeg" alt="Dr C Saidiya at WeCare Medical Centre">
+            </div>
+            <div class="media-slideshow slideshow-four" aria-label="Dr C Saidiya photo gallery">
+                <input type="radio" name="saidiya-gallery" id="saidiya-1">
+                <input type="radio" name="saidiya-gallery" id="saidiya-2">
+                <input type="radio" name="saidiya-gallery" id="saidiya-3">
+                <input type="radio" name="saidiya-gallery" id="saidiya-4">
+                <img src="images/ab DR cs1.jpeg" alt="Dr C Saidiya at WeCare Medical Centre">
+                <img src="images/ab DR cs2.png" alt="Dr C Saidiya providing medical care">
+                <img src="images/ab DR cs3.png" alt="Dr C Saidiya in consultation">
+                <img src="images/ab DR cs4.png" alt="Dr C Saidiya with the medical team">
+                <div class="slideshow-controls" aria-label="Change Dr C Saidiya image">
+                    <span class="slide-controls slide-controls-1"><label for="saidiya-4">&#10094;</label><label for="saidiya-2">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-2"><label for="saidiya-1">&#10094;</label><label for="saidiya-3">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-3"><label for="saidiya-2">&#10094;</label><label for="saidiya-4">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-4"><label for="saidiya-3">&#10094;</label><label for="saidiya-1">&#10095;</label></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="doctor-profile doctor-profile-reversed">
+            <div class="doctor-content">
+                <p class="eyebrow">Our specialist in diagnostic imaging </p>
+                <h2>Dr E Mpofu</h2>
+                <p><b>Dr E Mpofu</b> is part of the dedicated WeCare Medical Centre team, helping patients access thoughtful, professional healthcare in a welcoming environment.Major (Dr) Erina Mpofu. MBChB(medunsa)FC Rad Diag(SA) Radiologist in the South African National Defense Force (SANDF) and WeCare Medical Center.
+
+Completed undergraduate medical degree, MBChB, at MEDUNSA University in 2000 . After internship in 2001 and community service in 2002, I worked as a medical officer in the public sector from 2003 to 2004.
+
+In 2004, I joined the SANDF as a Medical Officer and has been a member of the Military Health Service since then, currently holding the rank of Major. I was deployed to the Democratic Republic of Congo in 2004 on a peacekeeping mission and within the borders of South Africa. I completed Aviation Medicine training in 2005 and Military Formative Training in 2009.
+
+Driven by a passion for diagnostic medicine, I specialized in radiology at Steve Biko hospital under the University of Pretoria from 2009 and qualified as a radiologist in 2016.
+
+</p>
+                <video src="images/DR em.mp4" controls></video>
+            </div>
+            <div class="media-slideshow slideshow-six" aria-label="Dr E Mpofu photo gallery">
+                <input type="radio" name="mpofu-gallery" id="mpofu-1">
+                <input type="radio" name="mpofu-gallery" id="mpofu-2">
+                <input type="radio" name="mpofu-gallery" id="mpofu-3">
+                <input type="radio" name="mpofu-gallery" id="mpofu-4">
+                <input type="radio" name="mpofu-gallery" id="mpofu-5">
+                <input type="radio" name="mpofu-gallery" id="mpofu-6">
+                <img src="images/ab DR em.png" alt="Dr E Mpofu at WeCare Medical Centre">
+                <img src="images/ab DR em 1.png" alt="Dr E Mpofu consulting with a patient">
+                <img src="images/ab DR em 2.png" alt="Dr E Mpofu at work">
+                <img src="images/1 ab DR em 3.png" alt="Dr E Mpofu in the medical centre">
+                <img src="images/ab DR em 4.png" alt="WeCare Medical Centre team member">
+                <img src="images/ab DR em 5.png" alt="WeCare Medical Centre consultation room">
+                <div class="slideshow-controls" aria-label="Change Dr E Mpofu image">
+                    <span class="slide-controls slide-controls-1"><label for="mpofu-6">&#10094;</label><label for="mpofu-2">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-2"><label for="mpofu-1">&#10094;</label><label for="mpofu-3">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-3"><label for="mpofu-2">&#10094;</label><label for="mpofu-4">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-4"><label for="mpofu-3">&#10094;</label><label for="mpofu-5">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-5"><label for="mpofu-4">&#10094;</label><label for="mpofu-6">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-6"><label for="mpofu-5">&#10094;</label><label for="mpofu-1">&#10095;</label></span>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="doctor-profile doctor-profile-reversed">
+            <div class="doctor-content">
+                <p class="eyebrow">Our specialist in obstetrics and gynaecology</p>
+                <h2>Dr BJ Assumani</h2>
+                <p><b>Dr BJ Assumani</b> is a highly skilled and compassionate obstetrician and gynaecologist dedicated to providing exceptional care to women throughout their reproductive journey. With extensive experience in managing pregnancies, performing deliveries, and addressing various gynaecological concerns, Dr Assumani is committed to promoting women's health and well-being. She combines her medical expertise with a patient-centered approach, ensuring that each individual receives personalized care and support. Dr Assumani's commitment to excellence and her passion for women's health make her a trusted healthcare provider in the field of obstetrics and gynaecology.</p>
+            <img src="images\DR bj.png" alt="Dr BJ Assumani at WeCare Medical Centre">
+            </div>
+            <div class="media-slideshow slideshow-six" aria-label="Dr BJ Assumani photo gallery">
+                <input type="radio" name="assumani-gallery" id="assumani-1">
+                <input type="radio" name="assumani-gallery" id="assumani-2">
+                <input type="radio" name="assumani-gallery" id="assumani-3">
+                <input type="radio" name="assumani-gallery" id="assumani-4">
+                <input type="radio" name="assumani-gallery" id="assumani-5">
+                <input type="radio" name="assumani-gallery" id="assumani-6">
+                <img src="images/DR bj.png" alt="Dr BJ Assumani at WeCare Medical Centre">
+                <img src="images/bj 1.jpeg" alt="Dr BJ Assumani providing care">
+                <img src="images/bj 2.jpeg" alt="Dr BJ Assumani in consultation">
+                <img src="images/bj 3.jpeg" alt="Dr BJ Assumani at work">
+                <img src="images/bj 4.jpeg" alt="Dr BJ Assumani with the medical team">
+                <img src="images/bj 5.jpeg" alt="Dr BJ Assumani in the medical centre">
+                <div class="slideshow-controls" aria-label="Change Dr BJ Assumani image">
+                    <span class="slide-controls slide-controls-1"><label for="assumani-6">&#10094;</label><label for="assumani-2">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-2"><label for="assumani-1">&#10094;</label><label for="assumani-3">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-3"><label for="assumani-2">&#10094;</label><label for="assumani-4">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-4"><label for="assumani-3">&#10094;</label><label for="assumani-5">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-5"><label for="assumani-4">&#10094;</label><label for="assumani-6">&#10095;</label></span>
+                    <span class="slide-controls slide-controls-6"><label for="assumani-5">&#10094;</label><label for="assumani-1">&#10095;</label></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand"><img src="images/wc.jpg" alt="WeCare Medical Centre logo"><p>Quality healthcare for individuals and families in a welcoming, professional environment.</p></div>
+            <div class="footer-column"><h2>Our services</h2><a href="services.html">Family medicine</a><a href="services.html">Radiology</a><a href="services.html">Physiotherapy</a><a href="services.html">Women's health</a></div>
+            <div class="footer-column"><h2>Quick links</h2><a href="aboutus.html">About us</a><a href="FAQ.html">Frequently asked questions</a><a href="bookings.html">Book an appointment</a><a href="contacts.html">Contact us</a></div>
+            <div class="footer-column footer-contact"><h2>Talk to us</h2><a href="tel:+27128080788">Reception: +27 12 808 0788</a><a href="tel:+27128080789">Lab &amp; Fertility: +27 12 808 0789</a><a href="https://api.whatsapp.com/send?phone=27817803963">WhatsApp: +27 81 780 3963</a><div class="footer-icons"><a href="https://api.whatsapp.com/send?phone=27817803963" aria-label="Contact us on WhatsApp"><img src="images/whatsapp icon.jpg" alt=""></a><a href="https://wecaremedicalcentre.co.za/contact/" aria-label="Call WeCare Medical Centre"><img src="images/telephone.jpg" alt=""></a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 WeCare Medical Centre. All rights reserved.</p><p>Professional care for every stage of life.</p></div>
+    </footer>
+    <a class="back-to-top" href="#top">Back to top &#8593;</a>
 </body>
 </html>

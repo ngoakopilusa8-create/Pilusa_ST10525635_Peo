@@ -6,7 +6,7 @@
     <title>WCWC webpage</title>
     <link rel="stylesheet"  href="CSS/style.css">
 </head>
-<body>
+<body id="top" class="home-page">
     <header>
         <!--Nav means navigation this is my navigation bar work in progress-->
         <nav class="navbar">
@@ -17,27 +17,72 @@
        <li><a href="contacts.html">Contacts</a></li>
        <li><a href="services.html">Services</a></li>
        <li><a href="FAQ.html">FAQ</a></li>
-        <li><a href="bookings.html" >Book now</a></li>
+        <li><a href="bookings.html" class="btn-book">Book now</a></li>
         </ul>
         </nav>
 
     </header>
-    <main>
-        <!--code for images below-->
-    <img src="images/Whole family 1.png">
-    <img src="images/why choose.png">
-    <img src="images/our services.png">
+    <main class="home-content">
+        <div class="media-slideshow slideshow-three" aria-label="WeCare Medical Centre gallery">
+            <input type="radio" name="home-gallery" id="home-1">
+            <input type="radio" name="home-gallery" id="home-2">
+            <input type="radio" name="home-gallery" id="home-3">
+            <img src="images/Whole family 1.png" alt="Whole family receiving healthcare">
+            <img src="images/why choose.png" alt="Why choose WeCare Medical Centre">
+            <img src="images/our services.png" alt="Our healthcare services">
+            <div class="slideshow-controls" aria-label="Change homepage image">
+                <span class="slide-controls slide-controls-1"><label for="home-3">&#10094;</label><label for="home-2">&#10095;</label></span>
+                <span class="slide-controls slide-controls-2"><label for="home-1">&#10094;</label><label for="home-3">&#10095;</label></span>
+                <span class="slide-controls slide-controls-3"><label for="home-2">&#10094;</label><label for="home-1">&#10095;</label></span>
+            </div>
+        </div>
+        <p class="home-description">These pictures showcase how our medical centre caters to the health needs of the entire family, from children to adults. We provide comprehensive healthcare services, ensuring that every member of your family receives the best possible care. Our team of experienced healthcare professionals is dedicated to promoting wellness and preventing illness, making us a trusted choice for families seeking quality medical care.</p>
     </main>
     
-    <footer>
-        <!--code for links with images will later be used as Icons-->
-<a href="https://api.whatsapp.com/send?phone=27817803963">
-    <img src="images/whatsapp icon.jpg" alt="Contact us on whatsapp" title="Contact us on whatsapp!">
-    </a>
-  <a href="https://wecaremedicalcentre.co.za/contact/">
-        <img src="images/telephone.jpg" alt="call us" title="call us!">
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/wc.jpg" alt="WeCare Medical Centre logo">
+                <p>Quality healthcare for individuals and families in a welcoming, professional environment.</p>
+            </div>
 
+            <div class="footer-column">
+                <h2>Our services</h2>
+                <a href="services.html">Family medicine</a>
+                <a href="services.html">Radiology</a>
+                <a href="services.html">Physiotherapy</a>
+                <a href="services.html">Women's health</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Quick links</h2>
+                <a href="aboutus.html">About us</a>
+                <a href="FAQ.html">Frequently asked questions</a>
+                <a href="bookings.html">Book an appointment</a>
+                <a href="contacts.html">Contact us</a>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h2>Talk to us</h2>
+                <a href="tel:+27128080788">Reception: +27 12 808 0788</a>
+                <a href="tel:+27128080789">Lab &amp; Fertility: +27 12 808 0789</a>
+                <a href="https://api.whatsapp.com/send?phone=27817803963">WhatsApp: +27 81 780 3963</a>
+                <div class="footer-icons">
+                    <a href="https://api.whatsapp.com/send?phone=27817803963" aria-label="Contact us on WhatsApp">
+                        <img src="images/whatsapp icon.jpg" alt="">
+                    </a>
+                    <a href="https://wecaremedicalcentre.co.za/contact/" aria-label="Call WeCare Medical Centre">
+                        <img src="images/telephone.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 WeCare Medical Centre. All rights reserved.</p>
+            <p>Professional care for every stage of life.</p>
+        </div>
     </footer>
+    <a class="back-to-top" href="#top">Back to top &#8593;</a>
 
 
 </body>
