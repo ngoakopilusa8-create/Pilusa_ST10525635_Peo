@@ -1165,14 +1165,29 @@ footer img {
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 0.875rem 1rem;
     }
 
     .nlinks {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+        gap: 6px 8px;
+    }
+
+    .nlinks li {
+        min-width: 0;
+        text-align: center;
+    }
+
+    .nlinks li a {
+        display: block;
+        padding: 8px 4px;
+        font-size: 0.95rem;
     }
 
     .booking-form {
