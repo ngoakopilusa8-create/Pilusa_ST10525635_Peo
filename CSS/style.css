@@ -696,7 +696,7 @@ header {
 
 .faq-section h2 {
     text-align: center;
-    color: #333333;
+    color: #0a0f5b;
     margin-bottom: 25px;
     font-size: 1.8rem;
 }
@@ -1269,3 +1269,134 @@ footer img {
     }
 }
 
+.skip-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+    padding: 10px 14px;
+    transform: translateY(-160%);
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #0a0f5b;
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+.brand-link {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.nlinks li a[aria-current="page"] {
+    color: #0056b3;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.nlinks li a.btn-book[aria-current="page"] {
+    background-color: #004999;
+    color: #ffffff;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #e08b26;
+    outline-offset: 3px;
+}
+
+.home-content {
+    width: min(100% - 40px, 1120px);
+}
+
+.home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.primary-link,
+.secondary-link {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 20px;
+    border: 2px solid #9ee7e5;
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.primary-link {
+    background-color: #9ee7e5;
+    color: #050b3d;
+}
+
+.secondary-link {
+    color: #ffffff;
+}
+
+.primary-link:hover,
+.secondary-link:hover {
+    transform: translateY(-2px);
+}
+
+.secondary-link:hover {
+    background-color: #9ee7e5;
+    color: #050b3d;
+}
+
+.service-card img {
+    aspect-ratio: 16 / 10;
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        width: min(100% - 28px, 1120px);
+        margin-top: 24px;
+        padding: 0;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .primary-link,
+    .secondary-link {
+        width: 100%;
+    }
+
+    .booking-form {
+        padding: 1.25rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

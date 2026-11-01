@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services offered</title>
-    <link rel="stylesheet"  href="CSS/style.css">
+    <meta name="description" content="Explore family and specialist healthcare services available at WeCare Medical Centre.">
+    <title>Our Services | WeCare Medical Centre</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body id="top">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
-    <nav class="navbar">
-        <img src="images/wc.jpg" class="logo">
+    <nav class="navbar" aria-label="Main navigation">
+        <a class="brand-link" href="index.html" aria-label="WeCare Medical Centre home"><img src="images/wc.jpg" class="logo" alt="WeCare Medical Centre"></a>
          <ul class="nlinks">
         <li class="la"><a href="index.html">Home</a></li>
-       <li class><a href="aboutus.html">About us</a></li>
+       <li><a href="aboutus.html">About us</a></li>
        <li><a href="contacts.html">Contacts</a></li>
-       <li><a href="services.html">Services</a></li>
+       <li><a href="services.html" aria-current="page">Services</a></li>
        <li><a href="FAQ.html">FAQ</a></li>
         <li><a href="bookings.html" class="btn-book">Book now</a></li>
         </ul>
@@ -23,7 +25,7 @@
         
     </header>
         <!--Main part-->
-        <main class="services-page">
+        <main class="services-page" id="main-content">
             <section class="services-intro">
                 <p class="eyebrow">Complete healthcare under one roof</p>
                 <h1>Our services</h1>
@@ -34,10 +36,10 @@
 
 <!--List with heading 3 and image-->
     
-        <div class="service-card family-medicine">
-    <UL>
+        <article class="service-card family-medicine">
         <h3>Family medicine</h3>
-        <img src="images/Family medicine.jpg">
+        <img src="images/Family medicine.jpg" alt="Family medicine services" loading="lazy">
+        <ul>
         <li>General Health Check-ups</li>
         <li>Preventive Screenings</li>
         <li>Routine Physical Exams</li>
@@ -45,13 +47,13 @@
         <li>Common colds, flu, infections</li>
         <li>Family Planning and Contraception</li>
         <li>Diagnosis and Treatment of Illnesses</li>
-    </UL>
-        </div>
+        </ul>
+        </article>
 
-        <div class="service-card obstetrics">
+        <article class="service-card obstetrics">
     <h3>Obstetrics & Gyneacology</h3>
+    <img src="images/anatomic-model.jpg" alt="Obstetrics and gynecology services" loading="lazy">
     <ul>
-<img src="images/anatomic-model.jpg">
    <li>Antenatal & Postnatal Care</li>
   <li>Natural Birth and Cesarean Section</li>
  <li>Specialist Gynaecologic Consultation</li>
@@ -64,32 +66,32 @@
 <li>Family Planning and Contraception</li>
 <li>Menopause Management</li>
 </ul>
-    </div>
+    </article>
 
-    <div class="service-card radiology">
+    <article class="service-card radiology">
 
         <h3>Radiology</h3>
-         <img src="images/Radiology.jpeg">
+         <img src="images/Radiology.jpeg" alt="Radiology services" loading="lazy">
         <ul>
  <li>Ultrasound Examinations</li>
 <li>Dental X-ray</li>
 <li>Whole Body X-rays</li>
 <li>CT Scan and Mammogram</li>
 </ul>
-    </div>
-    <div class="service-card mens-health">
+    </article>
+    <article class="service-card mens-health">
        <h3>Men's Health</h3>
-        <img src="images\mens health.webp" alt="Men's health services">
+        <img src="images/mens health.webp" alt="Men's health services" loading="lazy">
         <ul>
             <li>Screening for male-specific health concerns (prostate)</li>
             <li>Erectile dysfunction diagnoses & treatment</li>
             <li>Minor Procedures & suturing</li>
         </ul>
-    </div>
+    </article>
 
-    <div class="service-card physiotherapy">
+    <article class="service-card physiotherapy">
         <h3>Physio Therapy</h3>
-        <img src="images/physiot.jpg" alt="Physiotherapy treatment">
+        <img src="images/physiot.jpg" alt="Physiotherapy treatment" loading="lazy">
         <ul>
             <li>Manual Therapy</li>
             <li>Geriatric Physiotherapy</li>
@@ -97,12 +99,12 @@
             <li>Sports Physiotherapy</li>
             <li>Musculoskeletal Rehabilitation</li>
         </ul>
-    </div>
+    </article>
 
-    <div class="service-card iv-therapy">
+    <article class="service-card iv-therapy">
         
         <h3>IV Therapy(on appointment)</h3>
-        <img src="images/iv.jpg" alt="IV therapy treatment">
+        <img src="images/iv.jpg" alt="IV therapy treatment" loading="lazy">
         <ul>
             <li>Mood and brain booster drip</li>
             <li>Vitamin & Mineral booster drip</li>
@@ -110,11 +112,11 @@
             <li>Anti-aging drip</li>
             <li>Detox drip</li>
         </ul>
-    </div>
+    </article>
 
-    <div class="service-card speech-audiology">
+    <article class="service-card speech-audiology">
         <h3>SpeechTherapy & Audiology</h3>
-        <img src="images/speech.jpg" alt="Speech therapy and audiology">
+        <img src="images/speech.jpg" alt="Speech therapy and audiology" loading="lazy">
         <ul>
             <li>Foreign body removal</li>
             <li>Wax/Cerumen removal / Earn cleaning</li>
@@ -126,12 +128,12 @@
             <li>Dysphagia/feeding assessment & treatment (Paediatrics & Adults)</li>
             <li>RAF</li>
         </ul>
-    </div>
+    </article>
 
-    <div class="service-card laboratory-services">
+    <article class="service-card laboratory-services">
         
         <h3>Laboratory Services</h3>
-        <img src="images/lab.jpg" alt="Laboratory services">
+        <img src="images/lab.jpg" alt="Laboratory services" loading="lazy">
         <ul>
             <li>Haematology</li>
             <li>Coagulation</li>
@@ -145,11 +147,11 @@
             <li>Histopathology</li>
             <li>Molecular Diagnostics</li>
         </ul>
-    </div>
+    </article>
 
-    <div class="service-card fertility-clinic">
+    <article class="service-card fertility-clinic">
         <h3>Fertility Clinic</h3>
-        <img src="images/fertility.jpg" alt="Fertility clinic services">
+        <img src="images/fertility.jpg" alt="Fertility clinic services" loading="lazy">
         <ul>
             <li>Fertility screening</li>
             <li>Advanced sperm tests</li>
@@ -157,10 +159,10 @@
             <li>Artificial insemination</li>
             <li>Post vasectomy semen evaluation</li>
         </ul>
-        </div>
-        <div class="service-card dentistry">
+        </article>
+        <article class="service-card dentistry">
             <h3>Dentistry</h3>
-            <img src="images/teeth.jpg" alt="Dentistry services">
+            <img src="images/teeth.jpg" alt="Dentistry services" loading="lazy">
             <ul>
     <li>Braces</li>
     <li>Cleaning teeth</li>
@@ -172,7 +174,7 @@
   <li>False teeth</li>
  <li> Bleeding gums treatment</li>
             </ul>
-        </div>
+        </article>
         </section>
 </main>
 <footer class="site-footer">

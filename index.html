@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WCWC webpage</title>
-    <link rel="stylesheet"  href="CSS/style.css">
+    <meta name="description" content="Discover family and specialist healthcare services at WeCare Medical Centre in Pretoria.">
+    <title>WeCare Medical Centre | Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body id="top" class="home-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
-        <!--Nav means navigation this is my navigation bar work in progress-->
-        <nav class="navbar">
-        <img src="images/wc.jpg" class="logo">
+        <nav class="navbar" aria-label="Main navigation">
+        <a class="brand-link" href="index.html" aria-label="WeCare Medical Centre home"><img src="images/wc.jpg" class="logo" alt="WeCare Medical Centre"></a>
          <ul class="nlinks">
-        <li class="la"><a href="index.html">Home</a></li>
-       <li class><a href="aboutus.html">About us</a></li>
+        <li class="la"><a href="index.html" aria-current="page">Home</a></li>
+       <li><a href="aboutus.html">About us</a></li>
        <li><a href="contacts.html">Contacts</a></li>
        <li><a href="services.html">Services</a></li>
        <li><a href="FAQ.html">FAQ</a></li>
@@ -22,7 +23,7 @@
         </nav>
 
     </header>
-    <main class="home-content">
+    <main class="home-content" id="main-content">
         <div class="media-slideshow slideshow-three" aria-label="WeCare Medical Centre gallery">
             <input type="radio" name="home-gallery" id="home-1">
             <input type="radio" name="home-gallery" id="home-2">
@@ -37,6 +38,10 @@
             </div>
         </div>
         <p class="home-description">These pictures showcase how our medical centre caters to the health needs of the entire family, from children to adults. We provide comprehensive healthcare services, ensuring that every member of your family receives the best possible care. Our team of experienced healthcare professionals is dedicated to promoting wellness and preventing illness, making us a trusted choice for families seeking quality medical care.</p>
+        <div class="home-actions">
+            <a class="primary-link" href="services.html">Explore our services</a>
+            <a class="secondary-link" href="bookings.html">Request an appointment</a>
+        </div>
     </main>
     
     <footer class="site-footer">
@@ -72,7 +77,7 @@
                         <img src="images/whatsapp icon.jpg" alt="">
                     </a>
                     <a href="https://wecaremedicalcentre.co.za/contact/" aria-label="Call WeCare Medical Centre">
-                        <img src="images/telephone.jpg" alt="">
+                        <img src="images/telephone.jpg" alt="Telephone image icon">
                     </a>
                 </div>
             </div>
