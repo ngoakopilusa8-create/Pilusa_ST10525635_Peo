@@ -59,6 +59,6 @@ if (bookingForm) {
         const bookerName = `${firstName.value.trim()} ${surname.value.trim()}`;
 
         statusMessage.textContent =
-            `${greeting}, ${bookerName}! We have received your booking details.We are happy to assist in your medical or health issues. `;
+            `${greeting}, ${bookerName}! We have received your booking details.We are happy to assist in your medical or health issues.`;
     });
 }
