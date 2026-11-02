@@ -1067,6 +1067,68 @@ textarea:focus-visible {
         font-size: 14px;
     }
 
+    .home-page .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 16px;
+    }
+
+    .home-page .logo {
+        height: 42px;
+    }
+
+    .home-page .nlinks {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: center;
+        gap: 6px 8px;
+    }
+
+    .home-page .nlinks li a {
+        display: block;
+        padding: 9px 4px;
+        text-align: center;
+    }
+
+    .home-page .nlinks li a.btn-book {
+        padding: 9px 8px;
+    }
+
+    .home-page .home-content {
+        margin-top: 26px;
+        margin-bottom: 30px;
+        padding-right: 16px;
+        padding-left: 16px;
+        gap: 22px;
+    }
+
+    .home-page .media-slideshow {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+        border-radius: 14px;
+    }
+
+    .home-page .media-slideshow img {
+        border-radius: 13px;
+    }
+
+    .home-page .home-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .home-page .home-actions {
+        width: min(100%, 440px);
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .home-page .home-actions a {
+        min-height: 48px;
+        text-align: center;
+    }
+
     .nlinks {
         flex-direction: column;
         align-items: stretch;
@@ -1146,6 +1208,28 @@ textarea:focus-visible {
 }
 
 @media (max-width: 480px) {
+    .home-page .navbar {
+        gap: 10px;
+        padding: 10px 12px;
+    }
+
+    .home-page .nlinks {
+        gap: 4px;
+    }
+
+    .home-page .nlinks li a {
+        font-size: 0.9rem;
+    }
+
+    .home-page .footer-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .home-page .footer-brand p {
+        max-width: 340px;
+    }
+
     .service-grid {
         grid-template-columns: minmax(0, 1fr);
     }
