@@ -1,11 +1,14 @@
+// Select the booking form from the page
 const bookingForm = document.querySelector(".booking-form");
 
 if (bookingForm) {
+    // Store required form inputs
     const firstName = bookingForm.querySelector("#fname");
     const surname = bookingForm.querySelector("#sname");
     const bookingTime = bookingForm.querySelector("#btime");
     const statusMessage = bookingForm.querySelector(".form-status");
 
+    // Validate the text fields and booking date
     function updateCustomValidity() {
         [firstName, surname].forEach((field) => {
             const value = field.value.trim();
@@ -27,11 +30,13 @@ if (bookingForm) {
         }
     }
 
+    // Attach validation to the fields as the user types
     [firstName, surname, bookingTime].forEach((field) => {
         field.addEventListener("input", updateCustomValidity);
         field.addEventListener("change", updateCustomValidity);
     });
 
+    // Handle form submission
     bookingForm.addEventListener("submit", (event) => {
         event.preventDefault();
         updateCustomValidity();
@@ -41,6 +46,7 @@ if (bookingForm) {
             return;
         }
 
+        // Create a friendly confirmation message
         const hour = new Date().getHours();
         const greeting = hour < 5
             ? "Good evening"
@@ -49,6 +55,7 @@ if (bookingForm) {
                 : hour < 17
                     ? "Good afternoon"
                     : "Good evening";
+
         const bookerName = `${firstName.value.trim()} ${surname.value.trim()}`;
 
         statusMessage.textContent =
